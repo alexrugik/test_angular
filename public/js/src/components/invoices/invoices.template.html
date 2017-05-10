@@ -1,0 +1,15 @@
+<div>
+    invoice component
+</div>
+<div>
+    <ul>
+        <li ng-repeat="invoice in $ctrl.invoices">
+            <span ng-bind="invoice"></span>
+        </li>
+    </ul>
+</div>
+
+<button type="button"
+        ng-click="$ctrl.onCreateInvoice()"
+        class="btn btn-default">create Invoice
+</button>
